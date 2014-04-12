@@ -22,6 +22,7 @@ gem 'mail_form'
 gem 'simple_form'
 gem 'skrollr-rails'
 gem 'better_errors'
+gem 'unicorn'
 
 group :development, :test do
   gem 'foreman'

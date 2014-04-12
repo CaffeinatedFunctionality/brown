@@ -24,8 +24,10 @@ gem 'skrollr-rails'
 gem 'better_errors'
 gem 'unicorn'
 
+
 group :development, :test do
   gem 'foreman'
+  gem 'rails_12factor'
 end
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes

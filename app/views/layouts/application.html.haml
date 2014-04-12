@@ -7,12 +7,21 @@
     = stylesheet_link_tag    "application"
     = javascript_include_tag "vendor/modernizr"
     = csrf_meta_tags
+    #fb-root
+    :javascript
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=588284871221969";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
     .contain-to-grid.sticky
       %nav.top-bar{"data-topbar" => ""}
         %ul.title-area
           %li.name
             %h1
-              %a{:href => "slide-1"}Will Brown
+              %a{:href => "#slide-1"}Will Brown
           / Mobile Menu Toggle
           %li.toggle-topbar.menu-icon
             %a{:href => "#"} Menu
@@ -20,9 +29,13 @@
           / Left Nav Section
           %ul.left
             %li
-              %a{:href => "#slide-2"} About
+              %a{:href => "#slide-2"} Slide 2
             %li
-              %a{:href => "#slide-5"} Issues
+              %a{:href => "#slide-3"} Slide 3
+            %li
+              %a{:href => "#slide-4"} Slide 4
+            %li
+              %a{:href => "#slide-5"} Slide 5
             %li
               %a{:href => "#contact"} Contact
             %li#donatemobile

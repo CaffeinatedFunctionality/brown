@@ -38,6 +38,18 @@ position: fixed;
 overflow: hidden;
 }
 
+#fbsocial {  
+  z-index: 5000;
+  bottom: 0;  
+  right: 0;
+}
+
+#fbsocialmobile {
+  display: none;
+  z-index: 5000;
+  bottom: 0;  
+}
+
 /*.top-bar-section ul li > a{
   font-size: 40px !important;
   margin-top: 21px;
@@ -64,6 +76,12 @@ overflow: hidden;
     }
     #logo {
       position: fixed;
+    }
+    #fbsocial {
+      display: none;
+    }
+    #fbsocialmobile {
+      display: inline;
     }
 }
 
@@ -153,7 +171,7 @@ h2 {
 .curtainContainer .curtain {width: 300%; height: 1px; background-color: #000000; position: absolute; top: 25%; left: 0; opacity: 0}
 .curtainContainer .copy {position: absolute; bottom: 30%; left: 0; width: 100%; text-align: center;}
 
-#slide-4 .bcg {background-image:url(/assets/jax.jpg);width:100%;}
+#slide-4 .bcg {background-image:url(/assets/dt.jpg);width:100%;}
 
 /* Slide 5 */
 #slide-5 {position: relative;}
@@ -198,4 +216,4 @@ h2 {
   .bgBlack {
     background-color: rgba(0,0,0,0.75);
     padding: 3px 10px;
-  }
+  }*/

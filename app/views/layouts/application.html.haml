@@ -1,0 +1,35 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %title= content_for?(:title) ? yield(:title) : "foundation-rails"
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "vendor/modernizr"
+    = csrf_meta_tags
+    .contain-to-grid.sticky
+      %nav.top-bar{"data-topbar" => ""}
+        %ul.title-area
+          %li.name
+            %h1
+              %a{:href => "slide-1"}Will Brown
+          / Mobile Menu Toggle
+          %li.toggle-topbar.menu-icon
+            %a{:href => "#"} Menu
+        %section.top-bar-section
+          / Left Nav Section
+          %ul.left
+            %li
+              %a{:href => "#slide-2"} About
+            %li
+              %a{:href => "#slide-5"} Issues
+            %li
+              %a{:href => "#contact"} Contact
+            %li#donatemobile
+              %a{:href => "#"} Donate
+  #donate
+    %a{:href => "index.html"}
+      =image_tag("donateNowButton.png")
+  %body
+  =yield
+  = javascript_include_tag "application"

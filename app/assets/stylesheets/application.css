@@ -14,10 +14,6 @@
  *= require_tree .
  */
 
- #messagefield{
-  height: 500px;
- }
-
 .left {
   margin-left: 220px;
 }
@@ -82,7 +78,6 @@ overflow: hidden;
     #fbsocialmobile {
       display: inline;
     }
-    #slide-1 .bcg {background-image:url(/assets/WB_small.jpg); height: '50px', width: '100px'}
 }
 
 #logo {

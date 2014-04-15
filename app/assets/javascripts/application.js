@@ -13,11 +13,12 @@
 //= require skrollr
 //= require skrollr.ie
 //= require skrollr.menu
-//= require _main
 //= require jquery
 //= require jquery_ujs
 //= require foundation
 //= require_tree .
+
+
 
 $(function(){ $(document).foundation(); });
 
@@ -28,6 +29,13 @@ $(function(){ $(document).foundation(); });
         js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=588284871221969";
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
+
+// Setup variables
+  $window = $(window);
+  $slide = $('.homeSlide');
+  $slideTall = $('.homeSlideTall');
+  $slideTall2 = $('.homeSlideTall2');
+  $body = $('body');
 
 // Get window size
 winH = $window.height();

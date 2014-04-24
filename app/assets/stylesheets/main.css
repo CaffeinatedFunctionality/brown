@@ -36,9 +36,6 @@
   background-color: #ff0;
   vertical-align: center;
 }
-.mid{
-    max-width: 90% !important;
-}
 
 .full{
     max-width: 100% !important;
@@ -59,28 +56,32 @@
 .hidden { display: none; }
 
 .issuestitle {
-  font-size: 100px;
+  font-size: 50px;
   color: white;
-  margin-bottom: 50px;
+}
+
+.issue {
+  color: white;
+  font-size: 30px;
 }
 
 .sectiontitle {
-  font-size: 50px;
+  font-size: 30px;
   color: white;
 }
 
 .sectiontext {
-  font-size: 20px;
+  font-size: 15px;
   color: white;
 }
 
 .section2title {
-  font-size: 50px;
+  font-size: 30px;
   color: white;
 }
 
 .section2text {
-  font-size: 20px;
+  font-size: 15px;
   color: white;
   text-align: left;
 

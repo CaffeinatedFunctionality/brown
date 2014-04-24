@@ -59,31 +59,31 @@
 .hidden { display: none; }
 
 .issuestitle {
-  font-size: 40px;
+  font-size: 100px;
   color: white;
   margin-bottom: 50px;
 }
 
-
 .sectiontitle {
-  font-size: 30px;
+  font-size: 50px;
   color: white;
 }
 
 .sectiontext {
-  font-size: 10px;
+  font-size: 20px;
   color: white;
 }
 
 .section2title {
-  font-size: 30px;
+  font-size: 50px;
   color: white;
 }
 
 .section2text {
-  font-size: 10px;
+  font-size: 20px;
   color: white;
   text-align: left;
+
 }
 
 #donate {  

@@ -21,6 +21,7 @@ gem 'simple_form'
 gem 'skrollr-rails'
 gem 'better_errors'
 gem 'unicorn'
+gem 'mobile-fu'
 
 
 group :development, :test do

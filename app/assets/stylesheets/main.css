@@ -59,7 +59,7 @@
 .hidden { display: none; }
 
 .issuestitle {
-  font-size: 50px;
+  font-size: 40px;
   color: white;
   margin-bottom: 50px;
 }
@@ -71,7 +71,7 @@
 }
 
 .sectiontext {
-  font-size: 20px;
+  font-size: 10px;
   color: white;
 }
 
@@ -81,7 +81,7 @@
 }
 
 .section2text {
-  font-size: 20px;
+  font-size: 10px;
   color: white;
   text-align: left;
 }

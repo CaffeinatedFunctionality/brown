@@ -59,14 +59,14 @@
 .hidden { display: none; }
 
 .issuestitle {
-  font-size: 100px;
+  font-size: 50px;
   color: white;
   margin-bottom: 50px;
 }
 
 
 .sectiontitle {
-  font-size: 50px;
+  font-size: 30px;
   color: white;
 }
 
@@ -76,7 +76,7 @@
 }
 
 .section2title {
-  font-size: 50px;
+  font-size: 30px;
   color: white;
 }
 
@@ -84,7 +84,6 @@
   font-size: 20px;
   color: white;
   text-align: left;
-
 }
 
 #donate {  

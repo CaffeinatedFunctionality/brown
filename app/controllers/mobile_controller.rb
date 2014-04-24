@@ -13,4 +13,7 @@ class MobileController < ApplicationController
 
   def contact
   end
+
+  def solutions
+  end
 end

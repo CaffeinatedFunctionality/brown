@@ -1,9 +1,12 @@
 Brown::Application.routes.draw do
 
+  get "mobile/index"
+  get "mobile/bio"
+  get "mobile/soil_and_water"
+  get "mobile/issues"
+  get "mobile/contact"
+  get "mobile/solutions"
   get "welcome/index"
-  get "welcome/aboutme"
-  get "welcome/issues"
-  get "welcome/contact_us"
 
   match '/contacts', to: 'contacts#new', via: 'get'
   resources "contacts", only: [:new, :create]

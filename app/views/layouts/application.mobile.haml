@@ -1,0 +1,42 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+    %title= content_for?(:title) ? yield(:title) : "Will Brown 2014"
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "vendor/modernizr"
+    = csrf_meta_tags
+    = stylesheet_link_tag 'mobile' if mobile_device?
+    #fb-root
+    .contain-to-grid.sticky
+      %nav.top-bar{"data-topbar" => ""}
+        %ul.title-area
+          %li.name
+            %h1
+              %a{:href => "#slide-1"}Will Brown
+          / Mobile Menu Toggle
+          %li.toggle-topbar.menu-icon
+            %a{:href => "#"} Menu
+        %section.top-bar-section
+          / Left Nav Section
+          %ul.left
+            %li
+              =link_to 'Bio', 'mobile_bio_path'
+            %li
+              =link_to 'Soil and Water', 'mobile_soil_and_water_path'
+            %li
+              =link_to 'Issues', 'mobile_issues_path'
+            %li
+              =link_to 'Solutions', 'mobile_solutions_path'
+            %li
+              =link_to 'Contact', 'mobile_contact_path'
+            %li
+              %form{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post", :target => "_top"}
+                %input{:name => "cmd", :type => "hidden", :value => "_s-xclick"}
+                  %input{:name => "hosted_button_id", :type => "hidden", :value => "SVRTBEDUEDAYJ"}
+                    %input{:alt => "PayPal - The safer, easier way to pay online!", :border => "0", :name => "submit", :src => "https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif", :type => "image"}
+                      %img{:alt => "", :border => "0", :height => "1", :src => "https://www.paypalobjects.com/en_US/i/scr/pixel.gif", :width => "1"}
+  %body
+  =yield
+  = javascript_include_tag "application"

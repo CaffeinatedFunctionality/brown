@@ -8,7 +8,7 @@
   %section#slide-2
     .bcg{"data-0" => "background-color:rgb(1,27,59);", "data-anchor-target" => "#slide-2", "data-top" => "background-color:(0,0,0);"}
       .hsContainer
-        .hsContent{"data--100-bottom" => "opacity: 0", "data--280-bottom" => "opacity: 1;", "data-106-top" => "opacity: 0;", "data-280-top" => "opacity: 1;", "data-anchor-target" => "#slide-5 .section2text", "data-bottom-top" => "opacity: 0"}
+        .hsContent
           .row.mid#slide2content
             .large-4.columns
               #biopic
@@ -47,7 +47,7 @@
       .curtainContainer
         .curtain{"data-106-top" => "height: 1%; opacity: 0; top: -10%;", "data-anchor-target" => "#slide-4", "data-bottom-top" => "opacity: 0", "data-center" => "height: 100%; opacity: 0.5; top: 0%;"}
         .copy{"data--100-bottom" => "opacity: 0", "data--280-bottom" => "opacity: 1;", "data-106-top" => "opacity: 0;", "data-280-top" => "opacity: 1;", "data-anchor-target" => "#slide-4 .copy", "data-bottom-top" => "opacity: 0"}
-          .row
+          .row.mid#slide2content
             .small-8.small-centered.columns
               .issuestitle Issues
               %br
@@ -69,7 +69,7 @@
   %section#slide-5
     .bcg{"data-0" => "background-color:rgb(1,27,59);", "data-anchor-target" => "#slide-5", "data-top" => "background-color:(0,0,0);"}
       .hsContainer
-        .hsContent{"data--100-bottom" => "opacity: 0", "data--280-bottom" => "opacity: 1;", "data-106-top" => "opacity: 0;", "data-280-top" => "opacity: 1;", "data-anchor-target" => "#slide-5 .section2text", "data-bottom-top" => "opacity: 0"}
+        .hsContent
           .row
             .small-8.small-centered.columns
               .issuestitle Solutions
@@ -95,7 +95,7 @@
           = render 'contacts/form'
           %p
             %a{:name => "contact"}
-  #fbsocial.fb-like-box{"data-colorscheme" => "dark", "data-header" => "true", "data-height" => "400", "data-href" => "https://www.facebook.com/pages/Will-Brown/706450756066703", "data-show-border" => "true", "data-show-faces" => "true", "data-stream" => "true", "data-width" => "400"}
+  #fbsocial.fb-like-box{"data-colorscheme" => "dark", "data-header" => "true", "data-height" => "550", "data-href" => "https://www.facebook.com/pages/Will-Brown/706450756066703", "data-show-border" => "true", "data-show-faces" => "true", "data-stream" => "true", "data-width" => "400"}
   #fbsocialmobile.fb-like{"data-action" => "like", "data-href" => "https://www.facebook.com/pages/Will-Brown/706450756066703", "data-layout" => "standard", "data-share" => "true", "data-show-faces" => "true", "data-width" => "50"}
 %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
 :javascript

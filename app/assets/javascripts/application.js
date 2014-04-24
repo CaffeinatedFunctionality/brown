@@ -18,7 +18,15 @@
 //= require foundation
 //= require_tree .
 
-
+setTimeout(function() {
+          
+          // Resize sections
+          adjustWindow();
+          
+          // Fade in sections
+        $body.removeClass('loading').addClass('loaded');
+        
+    }, 800);
 
 $(function(){ $(document).foundation(); });
 

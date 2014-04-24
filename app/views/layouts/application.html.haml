@@ -23,18 +23,25 @@
             %li
               %a{:href => "#about"} About
             %li
-              %a{:href => "#slide-3"} Slide 3
+              %a{:href => "#slide-3"} Soil & Water
             %li
               %a{:href => "#slide-4"} Issues
             %li
-              %a{:href => "#slide-5"} Slide 5
+              %a{:href => "#slide-5"} Solutions
             %li
               %a{:href => "#contact"} Contact
             %li#donatemobile
-              %a{:href => "#"} Donate
+              %form{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post", :target => "_top"}
+                %input{:name => "cmd", :type => "hidden", :value => "_s-xclick"}
+                  %input{:name => "hosted_button_id", :type => "hidden", :value => "SVRTBEDUEDAYJ"}
+                    %input{:alt => "PayPal - The safer, easier way to pay online!", :border => "0", :name => "submit", :src => "https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif", :type => "image"}
+                      %img{:alt => "", :border => "0", :height => "1", :src => "https://www.paypalobjects.com/en_US/i/scr/pixel.gif", :width => "1"}
   #donate
-    %a{:href => "index.html"}
-      =image_tag("donateNowButton.png")
+    %form{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post", :target => "_top"}
+      %input{:name => "cmd", :type => "hidden", :value => "_s-xclick"}
+        %input{:name => "hosted_button_id", :type => "hidden", :value => "HTPPVJDEMV964"}
+          %input{:alt => "PayPal - The safer, easier way to pay online!", :border => "0", :name => "submit", :src => "http://s4.postimg.org/ed9maspgd/donate_Now_Button.png", :type => "image"}
+            %img{:alt => "", :border => "0", :height => "1", :src => "https://www.paypalobjects.com/en_US/i/scr/pixel.gif", :width => "1"}
   %body
   =yield
   = javascript_include_tag "application"

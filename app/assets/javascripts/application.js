@@ -59,7 +59,6 @@ $(window).load(function() {
 ( function( $ ) {
   
   // Setup variables
-  var $window = $(window);
   var $slide = $('.homeSlide');
   var $slideTall = $('.homeSlideTall');
   var $slideTall2 = $('.homeSlideTall2');

@@ -7,7 +7,7 @@
     = stylesheet_link_tag    "application"
     = javascript_include_tag "vendor/modernizr"
     = csrf_meta_tags
-    = stylesheet_link_tag 'mobile' if mobile_device?
+    / = stylesheet_link_tag 'mobile' if mobile_device?
     #fb-root
     .contain-to-grid.sticky
       %nav.top-bar{"data-topbar" => ""}

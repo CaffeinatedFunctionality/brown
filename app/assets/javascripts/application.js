@@ -88,7 +88,7 @@ $(window).load(function() {
     });
     
     // Get window size
-      winH = $window.height();
+      winH = $(window).height();
       
       // Keep minimum height 550
       if(winH <= 550) {

@@ -14,7 +14,7 @@
 //= require skrollr.ie
 //= require skrollr.menu
 //= require jquery
-//= require main
+//= require _main
 //= require jquery_ujs
 //= require foundation
 //= require_tree .

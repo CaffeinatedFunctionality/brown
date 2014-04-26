@@ -15,7 +15,7 @@
 //= require skrollr.menu
 //= require jquery
 //= require jquery_ujs
-//= require mobile
+//= require jquery.mobile
 //= require foundation
 //= require_tree .
 

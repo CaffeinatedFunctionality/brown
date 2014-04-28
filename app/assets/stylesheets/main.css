@@ -572,3 +572,48 @@ h2 {
         page-break-after: avoid;
     }
 }
+
+/*mobile*/
+
+.mindex {
+  background-image:url(/assets/WB_small.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+}
+
+
+.missues {
+  background-image:url(/assets/dt.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.msoil {
+  background-image:url(/assets/JAX124.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.mbio {
+  background-color: #010101;
+}
+
+.mcontact { 
+  background-color: #010101;
+}
+
+.msolutions {
+  background: none; background-color: #010101;
+}

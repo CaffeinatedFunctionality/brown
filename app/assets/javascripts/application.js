@@ -36,6 +36,18 @@ function init() {
     }, 2000);
 }
 
+$(function () {
+  // initialize skrollr if the window width is large enough
+  if(!(/Android|iPhone|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+    skrollr.init();
+  }
+
+  // disable skrollr if the window is resized below 500px wide
+  if(!(/Android|iPhone|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+    skrollr.init().destroy(); // skrollr.init() returns the singleton created above
+  }
+});
+
 // fade in experience
 function start() {
   

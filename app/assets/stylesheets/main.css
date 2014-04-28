@@ -130,8 +130,8 @@ overflow: hidden;
 .row {
   width: 100%;
 }
-
-@media only screen and (max-width: 800px) {
+/*media queries*/
+@media only screen and (max-width: 900px) {
     #donate {
       display: none;
     }
@@ -146,6 +146,10 @@ overflow: hidden;
     }
     #fbsocialmobile {
       display: inline;
+    }
+    .bannertext {
+      font-size: 30px;
+      top: 60%;
     }
 }
 
@@ -295,20 +299,6 @@ h2 {
 }
 .loading {
   background: url(loading.gif) no-repeat center center;
-}
-section {
-  min-width: 960px;
-  opacity: 0;
-}
-.loaded section,
-.no-js section {
-  opacity: 1;
-  -webkit-transition: opacity 300ms ease-out;
-  -moz-transition: opacity 300ms ease-out;
-  transition: opacity 300ms ease-out;
-}
-main {
-  overflow-x: hidden;
 }
 
 .bcg {

@@ -37,15 +37,7 @@ function init() {
 }
 
 $(function () {
-  // initialize skrollr if the window width is large enough
-  if(!(/Android|iPhone|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
-    skrollr.init();
-  }
-
-  // disable skrollr if the window is resized below 500px wide
-  if(!(/Android|iPhone|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
-    skrollr.init().destroy(); // skrollr.init() returns the singleton created above
-  }
+  
 });
 
 // fade in experience
@@ -84,12 +76,53 @@ $(window).load(function() {
       
   }, 800);
   
+
+      var check = {};
+
+$(document).ready(function() {
+    // Check the width of the screen
+    check.winW = $(window).width();
+    // Check if it's a touch screen (based on Modernizr) - Remove if it if you want    
+    check.isTouch = false;
+    if($('.touch')[0]){
+        check.isTouch = true;
+    }
+    // If the size of the screen is lower or equal to 767, we are on a mobile device
+    check.isMobile = false;
+    if(check.winW <= 767){
+        check.isMobile = true;
+    }
+    // If we are not on a mobile device, initiate skrollr
+    if (!check.isMobile){
+        check.s = skrollr.init({forceHeight: true});
+    }
+});
+
+// Disable or enable skrollr on window resize
+$(window).resize(function(){
+    console.log("RESIZE");
+    check.winW = $(window).width();
+    if(check.winW <= 767){
+        console.log("MOBILE");
+        check.isMobile = true;
+        if($('.skrollable')[0]){
+        check.s.destroy();
+        }
+    } else {
+        console.log("NOT MOBILE");
+        if(!$('.skrollable')[0]){
+        check.s = skrollr.init({forceHeight: true});
+        }
+    }
+});
+
+
   function adjustWindow(){
     
     // Init Skrollr
     var s = skrollr.init({
         render: function(data) {
-        
+          mobileDeceleration=0.001;
             //Debugging - Log the current scroll position.
             //console.log(data.curTop);
         }

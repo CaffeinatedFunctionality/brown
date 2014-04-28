@@ -111,18 +111,6 @@ overflow: hidden;
   display: none;
 }
 
-#mobilemain {
-  background-image:url(WB_small.jpg);
-  background-size: 800px;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-  left: 0px;
-  top: 0px;
-  position: absolute;
-  z-index: 0;
-}
-
 .center {
   text-align: center;
 }

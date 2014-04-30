@@ -22,15 +22,15 @@
           / Left Nav Section
           %ul.left
             %li
-              %a{:href => "#slide-2"} Bio
+              =link_to 'Bio', mobile_bio_path
             %li
-              %a{:href => "#slide-3"} Soil & Water
+              =link_to 'Soil and Water', mobile_soil_and_water_path
             %li
-              %a{:href => "#slide-4"} Issues
+              =link_to 'Issues', mobile_issues_path
             %li
-              %a{:href => "#slide-5"} Solutions
+              =link_to 'Solutions', mobile_solutions_path
             %li
-              %a{:href => "#contact"} Contact
+              =link_to 'Contact', mobile_contact_path
             %li
               %form{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post", :target => "_top"}
                 %input{:name => "cmd", :type => "hidden", :value => "_s-xclick"}

@@ -575,6 +575,7 @@ h2 {
   background-size: 100% 100%;
   height: 100%;
   width: 100%;
+  overflow-y: scroll;
 }
 
 
@@ -586,6 +587,7 @@ h2 {
   background-size: 100% 100%;
   height: 100%;
   width: 100%;
+  overflow-y: scroll;
 }
 
 .msoil {
@@ -596,14 +598,17 @@ h2 {
   background-size: 100% 100%;
   height: 100%;
   width: 100%;
+  overflow-y: scroll;
 }
 
 .mbio {
   background-color: #010101;
+  overflow-y: scroll;
 }
 
 .mcontact { 
   background-color: #010101;
+  overflow-y: scroll;
 }
 
 .msolutions {

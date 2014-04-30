@@ -119,6 +119,13 @@ overflow: hidden;
   width: 100%;
 }
 /*media queries*/
+@media only screen and (max-width: 400px) {
+  #slide-2 {
+      height: 2000px;
+      background-color: #010101
+    }
+}
+
 @media only screen and (max-width: 900px) {
     #donate {
       display: none;

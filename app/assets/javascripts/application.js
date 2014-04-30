@@ -106,7 +106,7 @@ $(window).resize(function(){
         console.log("MOBILE");
         check.isMobile = true;
         if($('.skrollable')[0]){
-        check.s.destroy();
+        check.s = skrollr.init().destroy();
         }
     } else {
         console.log("NOT MOBILE");

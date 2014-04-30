@@ -121,8 +121,7 @@ overflow: hidden;
 /*media queries*/
 @media only screen and (max-width: 400px) {
   #slide-2 {
-      height: 2000px;
-      background-color: #010101
+      height: 3000px;
     }
 }
 

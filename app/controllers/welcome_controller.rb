@@ -3,7 +3,8 @@ class WelcomeController < ApplicationController
     @contact = Contact.new
   end
 
-  def aboutme
+  def mobile
+    @contact = Contact.new
   end
 
   def issues

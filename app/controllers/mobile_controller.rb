@@ -12,6 +12,7 @@ class MobileController < ApplicationController
   end
 
   def contact
+    @contact = Contact.new
   end
 
   def solutions

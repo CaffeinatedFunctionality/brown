@@ -18,6 +18,12 @@
 //= require foundation
 //= require_tree .
 
+$(document).ready(
+    function() {  
+      $("html").niceScroll();
+    }
+  );
+
 (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;

@@ -68,23 +68,26 @@
 .sectiontitle {
   font-size: 30px;
   color: white;
+  line-height: 150%;
 }
 
 .sectiontext {
   font-size: 15px;
   color: white;
+  line-height: 150%;
 }
 
 .section2title {
   font-size: 30px;
   color: white;
+  line-height: 150%;
 }
 
 .section2text {
   font-size: 15px;
   color: white;
   text-align: left;
-
+  line-height: 150%;
 }
 
 #donate {  

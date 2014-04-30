@@ -6,6 +6,7 @@
     %title= content_for?(:title) ? yield(:title) : "Will Brown 2014"
     = stylesheet_link_tag    "application"
     = javascript_include_tag "vendor/modernizr"
+    = stylesheet_link_tag 'mobile' if mobile_device?
     = csrf_meta_tags
     #fb-root
     .contain-to-grid.sticky
@@ -21,15 +22,15 @@
           / Left Nav Section
           %ul.left
             %li
-              =link_to 'Bio', mobile_bio_path
+              %a{:href => "#slide-2"} Bio
             %li
-              =link_to 'Soil and Water', mobile_soil_and_water_path
+              %a{:href => "#slide-3"} Soil & Water
             %li
-              =link_to 'Issues', mobile_issues_path
+              %a{:href => "#slide-4"} Issues
             %li
-              =link_to 'Solutions', mobile_solutions_path
+              %a{:href => "#slide-5"} Solutions
             %li
-              =link_to 'Contact', mobile_contact_path
+              %a{:href => "#contact"} Contact
             %li
               %form{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post", :target => "_top"}
                 %input{:name => "cmd", :type => "hidden", :value => "_s-xclick"}

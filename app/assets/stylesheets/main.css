@@ -635,3 +635,17 @@ h2 {
   height: 100%;
   width: 100%;
 }
+
+.mbannertext {
+  max-width: 450px;
+  font-size: 20px;
+  display: table-cell;
+  top: 70%;
+  color: black;
+  text-shadow:2px 2px white;
+  padding: 0 8%;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  line-height: 150%;
+}

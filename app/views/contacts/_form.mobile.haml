@@ -1,19 +1,19 @@
 .row
   .large-8.small-centered.columns
     %div{align: "center"}
-      %h2 Send A message to Us
+      .sectiontitle Send A message to Us
       = form_for @contact, :html => {:class => 'form-horizontal' } do |f|
         .row
           .large-12.columns
-            %h2 Name
+            .sectiontitle Name
             = f.text_field :name, :required => true, :placeholder => 'Will Brown'
         .row
           .large-12.columns
-            %h2 Email
+            .sectiontitle Email
             = f.text_field :email, :required => true, :placeholder => 'WillBrown2014@solution4u.com'
         .row
           .large-12.columns
-            %h2 Message
+            .sectiontitle Message
             = f.text_area :message, :as => :text, :required => true, :size => "30x10" 
         .hidden
           = f.text_field :nickname, :hint => 'Leave this field blank!'

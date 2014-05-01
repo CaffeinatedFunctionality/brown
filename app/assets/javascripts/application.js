@@ -40,6 +40,14 @@ function init() {
     }, 2000);
 }
 
+skrollr.init({          
+            mobileCheck: function() {
+                //hack - forces mobile version to be off
+                return false;
+            }
+        });
+
+
 $(function () {
   
 });

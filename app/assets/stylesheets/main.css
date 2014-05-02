@@ -110,7 +110,7 @@ overflow: hidden;
   display: none;
   z-index: 5000;
   bottom: 0;  
-  position: fixed;
+  position: absolute;
   overflow: hidden;
 }
 

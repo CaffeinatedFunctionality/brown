@@ -110,6 +110,8 @@ overflow: hidden;
   display: none;
   z-index: 5000;
   bottom: 0;  
+  position: fixed;
+  overflow: hidden;
 }
 
 #donatemobile {
